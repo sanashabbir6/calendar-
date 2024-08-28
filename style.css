@@ -1,0 +1,93 @@
+body{
+    background-color: #142c3e !important;
+}
+
+.calendar {
+    max-width: 600px;
+    margin: 30px auto;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.calendar-header {
+    background-color: #00abf0;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.calendar-header h3 {
+    margin: 0;
+}
+
+.next-month,
+.prev-month {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white !important;
+    border-radius: 5px;
+    padding: 5px 15px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+
+
+}
+
+.calendar-nav:hover {
+    color: rgb(12, 12, 12);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.prev-month {
+    left: 10px;
+}
+
+.next-month {
+    right: 10px;
+}
+
+.calendar-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.calendar-table th,
+.calendar-table td {
+    padding: 5px;
+    text-align: center;
+    border: 1px solid #dee2e6;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.calendar-table th {
+    background-color: #f8f9fa;
+}
+
+.calendar-table td {
+    height: 80px;
+    background-color: white;
+}
+
+.calendar-table td:not(.nextmonth-days, .prev-month-day):hover {
+    background-color: #00abf0;
+}
+
+.today {
+    background-color: #00abf0 !important;
+    color: white !important;
+}
+
+.nextmonth-days {
+    color: rgb(162, 161, 161) !important;
+    cursor: not-allowed !important;
+}
+
+.prev-month-day {
+    color: rgb(162, 161, 161) !important;
+    cursor: not-allowed !important;
+}
